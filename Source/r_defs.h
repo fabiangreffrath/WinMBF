@@ -146,6 +146,10 @@ typedef struct
   int linecount;
   struct line_s **lines;
 
+  // [kb] for R_FixWiggle()
+  int cachedheight;
+  int scaleindex;
+
 } sector_t;
 
 //

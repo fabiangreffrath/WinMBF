@@ -271,6 +271,9 @@ void P_LoadSectors (int lump)
 
       // killough 10/98: sky textures coming from sidedefs:
       ss->sky = 0;
+
+      // [kb] for R_FixWiggle()
+      ss->cachedheight = 0;
     }
 
   Z_Free (data);
